@@ -4,6 +4,7 @@
   "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
   "main": "dist/app.js",
   "scripts": {
+    "app": "tsx app.ts",
     "dev": "tsx watch app.ts",
     "build": "tsc",
     "start": "node dist/app.js",
