@@ -29,6 +29,6 @@
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-  "include": ["app.ts"],
+  "include": ["app.ts", "services/**/*.ts", "types/**/*.d.ts"],
   "exclude": ["dist", "node_modules"]
 }

@@ -1,0 +1,15 @@
+export class Status {
+    messageId: string
+    status: string
+    recipientPhoneNumber: string
+    constructor(rawStatus: any) {
+        // The message ID that this status update refers to
+        this.messageId = rawStatus.id;
+
+        // The delivery status (sent, delivered, read, failed, etc.)
+        this.status = rawStatus.status;
+
+        // The recipient's phone number
+        this.recipientPhoneNumber = rawStatus.recipient_id;
+    }
+};

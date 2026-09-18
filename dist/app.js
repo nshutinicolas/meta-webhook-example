@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
     }
     res.status(403).end();
 });
+// Handling incoming messages
 app.post('/', (req, res) => {
     const timestamp = new Date().toISOString().replace('T', ' ').slice(0, 19);
     console.log(`\n\nWebhook received ${timestamp}\n`);

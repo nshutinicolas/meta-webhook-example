@@ -22,7 +22,9 @@
   },
   "homepage": "https://gitlab.com/nshutinicolas/meta-webhook-example#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "facebook-nodejs-business-sdk": "^24.0.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
