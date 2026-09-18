@@ -74,3 +74,6 @@ const verifyRequestSignature = (req: Request, res: Response, buf: crypto.BinaryL
         throw new Error("Couldn't validate the request signature.");
     }
 }
+
+// Parse application/json. Verify that callback came from Facebook
+// app.use(express.json({verify: verifyRequestSignature}))
